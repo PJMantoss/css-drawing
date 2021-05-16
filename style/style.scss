@@ -9,6 +9,6 @@
     --color-4-alpha: rgba(69, 109, 136, 0);
 }
 
-* {
+*, *::before, *::after {
     box-sizing: border-box;
 }

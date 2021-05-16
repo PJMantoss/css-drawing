@@ -13,4 +13,7 @@
     box-sizing: border-box;
 }
 
-body {}
+body {
+    display: grid;
+    height: 100vh;
+}

@@ -1,3 +1,37 @@
-* {
+:root {
+  --color-1: rgb(255, 79, 79);
+  --color-1-alpha: rgba(255, 79, 79, 0);
+  --color-2: rgb(253, 175, 108);
+  --color-2-alpha: rgba(253, 175, 108, 0);
+  --color-3: rgb(233, 254, 154);
+  --color-3-alpha: rgba(233, 254, 154, 0);
+  --color-4: rgb(250, 253, 255);
+  --color-4-alpha: rgba(69, 109, 136, 0);
+}
+
+*, *::before, *::after {
   box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  place-content: center;
+  font-family: "Poppins";
+  background: #222222;
+}
+
+.btn-container {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  gap: 1em;
+}
+.btn-container .button {
+  background: gray;
+  height: 40px;
+  padding: 1.5em;
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

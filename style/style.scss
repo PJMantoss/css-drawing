@@ -9,7 +9,9 @@
     --color-4-alpha: rgba(69, 109, 136, 0);
 }
 
-@mixin btn-style($color, $color-alpha){}
+@mixin btn-style($color, $color-alpha){
+     background: $color radial-gradient(circle, rgba(255, 255, 255, .3) 0%, $color 70%);
+}
 
 *, *::before, *::after {
     box-sizing: border-box;

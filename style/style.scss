@@ -11,6 +11,8 @@
 
 @mixin btn-style($color, $color-alpha){
      background: $color radial-gradient(circle, rgba(255, 255, 255, .3) 0%, $color 70%);
+     box-shadow: inset 9px 9px 0px -7px $color,
+          
 }
 
 *, *::before, *::after {

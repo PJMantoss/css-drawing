@@ -9,6 +9,8 @@
     --color-4-alpha: rgba(69, 109, 136, 0);
 }
 
+@mixin btn-style($color, $color-alpha){}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }

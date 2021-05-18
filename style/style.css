@@ -23,15 +23,101 @@ body {
 }
 
 .btn-container {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(14, 1fr);
   gap: 1em;
+  padding-top: 3em;
 }
 .btn-container .button {
+  position: relative;
   background: gray;
-  height: 40px;
+  height: 80px;
   padding: 1.5em;
   border-width: 1px;
   border-style: solid;
   cursor: pointer;
+}
+.btn-container .button:nth-child(1), .btn-container .button:nth-child(2), .btn-container .button:nth-child(3), .btn-container .button:nth-child(4) {
+  background: var(--color-1) radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, var(--color-1) 70%);
+  box-shadow: inset 9px 9px 0px -7px var(--color-1), inset -8px -8px 0 -7px rgba(255, 255, 255, 0.3), -2px -2px 2px 0 rgba(0, 0, 0, 0.2), -10px -10px 7px 2px rgba(0, 0, 0, 0.1);
+  -o-border-image: linear-gradient(to bottom, var(--color-1-alpha), white, var(--color-1-alpha)) 1 100%;
+     border-image: linear-gradient(to bottom, var(--color-1-alpha), white, var(--color-1-alpha)) 1 100%;
+}
+.btn-container .button:nth-child(5), .btn-container .button:nth-child(6), .btn-container .button:nth-child(7), .btn-container .button:nth-child(8) {
+  background: var(--color-2) radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, var(--color-2) 70%);
+  box-shadow: inset 9px 9px 0px -7px var(--color-2), inset -8px -8px 0 -7px rgba(255, 255, 255, 0.3), -2px -2px 2px 0 rgba(0, 0, 0, 0.2), -10px -10px 7px 2px rgba(0, 0, 0, 0.1);
+  -o-border-image: linear-gradient(to bottom, var(--color-2-alpha), white, var(--color-2-alpha)) 1 100%;
+     border-image: linear-gradient(to bottom, var(--color-2-alpha), white, var(--color-2-alpha)) 1 100%;
+}
+.btn-container .button:nth-child(9), .btn-container .button:nth-child(10), .btn-container .button:nth-child(11), .btn-container .button:nth-child(12) {
+  background: var(--color-3) radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, var(--color-3) 70%);
+  box-shadow: inset 9px 9px 0px -7px var(--color-3), inset -8px -8px 0 -7px rgba(255, 255, 255, 0.3), -2px -2px 2px 0 rgba(0, 0, 0, 0.2), -10px -10px 7px 2px rgba(0, 0, 0, 0.1);
+  -o-border-image: linear-gradient(to bottom, var(--color-3-alpha), white, var(--color-3-alpha)) 1 100%;
+     border-image: linear-gradient(to bottom, var(--color-3-alpha), white, var(--color-3-alpha)) 1 100%;
+}
+.btn-container .button:nth-child(13), .btn-container .button:nth-child(14) {
+  background: var(--color-4) radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, var(--color-4) 70%);
+  box-shadow: inset 9px 9px 0px -7px var(--color-4), inset -8px -8px 0 -7px rgba(255, 255, 255, 0.3), -2px -2px 2px 0 rgba(0, 0, 0, 0.2), -10px -10px 7px 2px rgba(0, 0, 0, 0.1);
+  -o-border-image: linear-gradient(to bottom, var(--color-4-alpha), white, var(--color-4-alpha)) 1 100%;
+     border-image: linear-gradient(to bottom, var(--color-4-alpha), white, var(--color-4-alpha)) 1 100%;
+}
+.btn-container .button:before {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: -2em;
+  left: 0;
+  color: gray;
+}
+.btn-container .button:nth-child(1):before {
+  content: "NR";
+}
+.btn-container .button:nth-child(2):before {
+  content: "SD";
+}
+.btn-container .button:nth-child(3):before {
+  content: "LT";
+}
+.btn-container .button:nth-child(4):before {
+  content: "HC";
+}
+.btn-container .button:nth-child(5):before {
+  content: "CH";
+}
+.btn-container .button:nth-child(6):before {
+  content: "CH";
+}
+.btn-container .button:nth-child(7):before {
+  content: "NR";
+}
+.btn-container .button:nth-child(8):before {
+  content: "NR";
+}
+.btn-container .button:nth-child(9):before {
+  content: "NR";
+}
+.btn-container .button:nth-child(10):before {
+  content: "NR";
+}
+.btn-container .button:nth-child(11):before {
+  content: "NR";
+}
+.btn-container .button:nth-child(12):before {
+  content: "NR";
+}
+.btn-container .button:nth-child(13):before {
+  content: "NR";
+}
+.btn-container .button:nth-child(14):before {
+  content: "NR";
+}
+.btn-container:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  top: 0;
+  left: 0;
+  background: repeating-linear-gradient(rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 10%, #222222 10%, #222222 20%);
 }/*# sourceMappingURL=style.css.map */
